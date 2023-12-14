@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { HousingLocation } from '../housing-location';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-housing-location',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   template: `
     <section class="listing">
       <img
