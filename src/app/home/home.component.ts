@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <section>
-      <form>
+      <form >
         <input type="text" placeholder="Filter by city" />
         <button class="primary" type="button">Search</button>
       </form>
