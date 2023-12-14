@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
+import { HousingLocationComponent } from '../housing-location/housing-location.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [HousingLocationComponent],
   template: `
     <section>
-      <form >
+      <form>
         <input type="text" placeholder="Filter by city" />
         <button class="primary" type="button">Search</button>
       </form>
+      <section>
+        <app-housing-location></app-housing-location>
+      </section>
     </section>
   `,
   styleUrl: './home.component.css',
